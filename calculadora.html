@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aula 6 - Exercicio 02</title>
+    <style>
+            body{
+                background-color: rgb(57, 57, 119);
+                color: blanchedalmond;
+                font: normal 20pt Arial;
+            }   
+    </style>
+</head>
+<body>
+    <script> 
+        var nome = window.prompt('Me fala seu nome ae kk')
+        var n1 = Number(window.prompt('Me fala um numero'))
+        var operador = window.prompt('Me informe o operador')
+        var n2 =  Number(window.prompt('Me fala outro numero'))
+
+        if (operador != '+' || operador != '-' || operador != '*' || operador != '/' || operador != '%' || operador != '**') {
+                document.write(nome+', por favor, digite um operador valido!')
+        }else if(operador == '+'){
+           document.write(nome+', você está somando! <br>')
+           document.write(n1+'<br>')
+           document.write(`${operador} <br>`)
+           document.write(n2+'<br>')
+           document.write('= <br>')
+           document.write((n1+n2))
+           }else if(operador == '-'){
+           document.write(nome+', você está diminuindo! <br>')
+           document.write(n1+'<br>')
+           document.write(`${operador} <br>`)
+           document.write(n2+'<br>')
+           document.write('= <br>')
+           document.write((n1-n2)) 
+           }else if(operador == '*'){
+           document.write(nome+', você está multiplicando! <br>')
+           document.write(n1+'<br>')
+           document.write(`${operador} <br>`)
+           document.write(n2+'<br>')
+           document.write('= <br>')
+           document.write((n1*n2)) 
+           }else if(operador == '/'){
+           document.write(nome+', você está dividindo! <br>')
+           document.write(n1+'<br>')
+           document.write(`${operador} <br>`)
+           document.write(n2+'<br>')
+           document.write('= <br>')
+           document.write((n1/n2)) 
+           }else if(operador == '%'){
+           document.write(nome+', você está pegando o resto da divisão! <br>')
+           document.write(n1+'<br>')
+           document.write(`${operador} <br>`)
+           document.write(n2+'<br>')
+           document.write('= <br>')
+           document.write((n1%n2)) 
+           }else if(operador == '**'){
+           document.write(nome+', você está pegando a potência! <br>')
+           document.write(n1+'<br>')
+           document.write(`${operador} <br>`)
+           document.write(n2+'<br>')
+           document.write('= <br>')
+           document.write((n1**n2)) 
+        }
+    </script>
+</body>
+</html>
